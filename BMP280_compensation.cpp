@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (c) 2020 Bosch Sensortec GmbH. All rights reserved.
  *
  * BSD-3-Clause
