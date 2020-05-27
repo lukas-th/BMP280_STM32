@@ -63,9 +63,14 @@ $(function() {
 <div class="title"><a class="el" href="class_b_m_p280.html">BMP280</a> for STM32 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Interfacing the Bosch Sensortec <a class="el" href="class_b_m_p280.html">BMP280</a> pressure sensor with an STM32 using SPI and HAL</p>
+<div class="textblock"><p>Interfacing the Bosch Sensortec <a class="el" href="class_b_m_p280.html">BMP280</a> pressure sensor with an STM32 using SPI and HAL.</p>
+<p>This repository was made for usage in <a href="https://github.com/1ukast/QuadrocopterV2" title="BMP280_STM32 Documentation">this quadrocopter project</a> (not yet public), which is utilizing a STM32 microcontroller to make a custom flight controller.</p>
+<p>The quadrocopter project makes use of the HAL Drivers for STM32 and the STM32CubeMX code generator provided by ST to initialize hardware peripherals such as SPI. It is written in C++.</p>
+<p>This repository provides a C++ Class called "BMP280" to inteface the <a class="el" href="class_b_m_p280.html">BMP280</a> pressure sensor. The constructor needs the HAL SPI handle as an argument.</p>
+<p>There are 4 hardware dependent methods: spiReadWrite, spiCSNhigh, spiCSNlow and delay_ms. Adjust those to your project if necessary.</p>
 <p>The code documentation is available <a href="https://1ukast.github.io/BMP280_STM32/doc/index.html" title="BMP280_STM32 Documentation">here</a>.</p>
-<p>It is build automatically using doxygen and deployed to gh-pages on every push to the master branch. </p><div class="image">
+<p>It is build automatically using doxygen and deployed to gh-pages on every push to the master branch.<br />
+ </p><div class="image">
 <object type="image/svg+xml" data="https://github.com/1ukast/BMP280_STM32/workflows/documentation/badge.svg" alt="documentation"></object>
 </div>
  </div></div><!-- contents -->
