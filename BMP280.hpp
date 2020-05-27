@@ -13,9 +13,10 @@
 class BMP280
 {
 public:
-	BMP280(SPI_HandleTypeDef* handle);
+	BMP280(SPI_HandleTypeDef *handle);
 
-	struct Measurement {
+	struct Measurement
+	{
 		float temperature = 0;
 		float pressure = 0;
 		float altitude = 0;
@@ -25,25 +26,25 @@ public:
 	void measure();
 
 private:
-	SPI_HandleTypeDef* spiHandle;
+	SPI_HandleTypeDef *spiHandle;
 	float p_reference = 0;
 	int32_t t_fine = 0;
 
-	struct CompensationParameters {
-		uint16_t dig_T1;
-		int16_t dig_T2;
-		int16_t dig_T3;
-		uint16_t dig_P1;
-		int16_t dig_P2;
-		int16_t dig_P3;
-		int16_t dig_P4;
-		int16_t dig_P5;
-		int16_t dig_P6;
-		int16_t dig_P7;
-		int16_t dig_P8;
-		int16_t dig_P9;
+	struct CompensationParameters
+	{
+		uint16_t dig_t1;
+		int16_t dig_t2;
+		int16_t dig_t3;
+		uint16_t dig_p1;
+		int16_t dig_p2;
+		int16_t dig_p3;
+		int16_t dig_p4;
+		int16_t dig_p5;
+		int16_t dig_p6;
+		int16_t dig_p7;
+		int16_t dig_p8;
+		int16_t dig_p9;
 	} compensationParameters;
-
 
 	uint8_t readRegister(uint8_t address);
 	void writeRegister(uint8_t address, uint8_t value);

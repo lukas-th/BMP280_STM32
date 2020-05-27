@@ -20,7 +20,8 @@
 
 #define BMP280_RESET_VALUE    0xB6
 
-enum Oversampling {
+enum Oversampling
+{
 	oversampling_skipped = 0b000,
 	oversampling_x1 = 0b001,
 	oversampling_x2 = 0b010,
@@ -29,13 +30,13 @@ enum Oversampling {
 	oversampling_x16 = 0b101
 };
 
-enum PowerMode {
-	mode_sleep = 0b00,
-	mode_forced = 0b01,
-	mode_normal = 0b11
+enum PowerMode
+{
+	mode_sleep = 0b00, mode_forced = 0b01, mode_normal = 0b11
 };
 
-enum StandbyTime {
+enum StandbyTime
+{
 	standby_time_500us = 0b000,
 	standby_time_62500us = 0b001,
 	standby_time_125ms = 0b010,
@@ -46,7 +47,8 @@ enum StandbyTime {
 	standby_time_4000ms = 0b111
 };
 
-enum FilterSetting {
+enum FilterSetting
+{
 	filter_off = 0b000,
 	filter_coeff_2 = 0b001,
 	filter_coeff_4 = 0b010,
