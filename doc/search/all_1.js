@@ -19,5 +19,5 @@ var searchData=
   ['bmp280_5freg_5ftemp',['BMP280_REG_TEMP',['../_b_m_p280__defines_8h.html#af4a6f01e143b29bafc80592e9674f3d1',1,'BMP280_defines.h']]],
   ['bmp280_5freset_5fvalue',['BMP280_RESET_VALUE',['../_b_m_p280__defines_8h.html#a37118440f3eae833c1d99f5400d3f80e',1,'BMP280_defines.h']]],
   ['bmp280_5fspi_5fmask_5fwrite',['BMP280_SPI_MASK_WRITE',['../_b_m_p280__defines_8h.html#ad3f8d007f531e2b572aae8baaaa6d604',1,'BMP280_defines.h']]],
-  ['bmp280_5fstm32',['BMP280_STM32',['../index.html',1,'']]]
+  ['bmp280_20for_20stm32',['BMP280 for STM32',['../index.html',1,'']]]
 ];
