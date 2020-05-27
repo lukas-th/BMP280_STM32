@@ -1,0 +1,32 @@
+name: masterCI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build_documentation:
+    
+    runs-on: ubuntu-18.04
+    
+    steps:
+    
+    - uses: actions/checkout@v2
+      
+    - name: Install doxygen
+      run: sudo apt install doxygen
+
+    - name: Run doxygen
+      run: doxygen
+
+    - name: Deploy documentation to gh-pages
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: doc/html
+        TARGET_FOLDER: doc
+        COMMIT_MESSAGE: Build documentation and deploy to gh-pages
