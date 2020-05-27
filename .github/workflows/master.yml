@@ -1,4 +1,4 @@
-name: masterCI
+name: documentation
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  build_documentation:
+  build_and_deploy:
     
     runs-on: ubuntu-18.04
     
