@@ -35,7 +35,7 @@ uint8_t BMP280::initialize()
 	// END OF CONFIGURATION --------------------------
 
 	readCompensationParameters();
-	setReferencePressure(100, 5);
+	setReferencePressure(100, 50);
 
 	return 0;
 }
@@ -81,6 +81,7 @@ void BMP280::readCompensationParameters()
  * */
 void BMP280::setReferencePressure(uint16_t samples, uint8_t delay)
 {
+	delay_ms(500);
 	float sum = 0;
 	for (char i = 0; i < samples; i++)
 	{
