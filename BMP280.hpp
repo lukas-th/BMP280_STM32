@@ -46,10 +46,6 @@ private:
 		int16_t dig_p9;
 	} compensationParameters;
 
-	uint8_t readRegister(uint8_t address);
-	void writeRegister(uint8_t address, uint8_t value);
-	void readMBRegister(uint8_t address, uint8_t *values, uint8_t length);
-
 	void reset();
 	uint8_t getID();
 	void readCompensationParameters();
@@ -62,6 +58,10 @@ private:
 
 	int32_t compensate_temperature(int32_t adc_T);
 	uint32_t compensate_pressure(int32_t adc_P);
+
+	uint8_t readRegister(uint8_t address);
+	void writeRegister(uint8_t address, uint8_t value);
+	void readMBRegister(uint8_t address, uint8_t *values, uint8_t length);
 
 	uint8_t spiReadWrite(uint8_t tx_message);
 	void spiCSNhigh();
