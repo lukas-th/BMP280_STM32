@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 #include "stm32f1xx_hal.h"
-#include "BMP280_defines.h"
+#include "BMP280/BMP280_defines.h"
 
 /**
  *  Interface with an Bosch BMP280 pressure sensor over SPI.

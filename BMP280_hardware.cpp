@@ -1,6 +1,6 @@
 #include "main.h"
-#include "BMP280.hpp"
-#include "BMP280_defines.h"
+#include "BMP280/BMP280.hpp"
+#include "BMP280/BMP280_defines.h"
 #include "stm32f1xx_hal.h"
 
 #include <stdint.h>

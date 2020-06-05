@@ -36,8 +36,8 @@
  */
 
 #include <stdint.h>
-#include "BMP280.hpp"
-#include "BMP280_defines.h"
+#include "BMP280/BMP280.hpp"
+#include "BMP280/BMP280_defines.h"
 
 /**
  * Calculate sensor temperature from measurement and compensation parameters.
