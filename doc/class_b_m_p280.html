@@ -96,12 +96,6 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a7a056a123b636e617bb7f97d69ab065e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#a7a056a123b636e617bb7f97d69ab065e">readRegister</a> (uint8_t address)</td></tr>
-<tr class="separator:a7a056a123b636e617bb7f97d69ab065e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9bfadcde32dc5bd28c8193d2676ae7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#aa9bfadcde32dc5bd28c8193d2676ae7c">writeRegister</a> (uint8_t address, uint8_t value)</td></tr>
-<tr class="separator:aa9bfadcde32dc5bd28c8193d2676ae7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dba53d36f569911bf4792badabf292b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#a0dba53d36f569911bf4792badabf292b">readMBRegister</a> (uint8_t address, uint8_t *values, uint8_t length)</td></tr>
-<tr class="separator:a0dba53d36f569911bf4792badabf292b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade175aba7f99e76113d3e5a2b232ebb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#ade175aba7f99e76113d3e5a2b232ebb7">reset</a> ()</td></tr>
 <tr class="separator:ade175aba7f99e76113d3e5a2b232ebb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ff4f6e91712c06ca560acedbe5c896e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#a2ff4f6e91712c06ca560acedbe5c896e">getID</a> ()</td></tr>
@@ -124,6 +118,12 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ad8f5342a13190bb9ac5ddec344a2af2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d3bc809863824158e89d6f66150ab19"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#a1d3bc809863824158e89d6f66150ab19">compensate_pressure</a> (int32_t adc_P)</td></tr>
 <tr class="separator:a1d3bc809863824158e89d6f66150ab19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a056a123b636e617bb7f97d69ab065e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#a7a056a123b636e617bb7f97d69ab065e">readRegister</a> (uint8_t address)</td></tr>
+<tr class="separator:a7a056a123b636e617bb7f97d69ab065e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9bfadcde32dc5bd28c8193d2676ae7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#aa9bfadcde32dc5bd28c8193d2676ae7c">writeRegister</a> (uint8_t address, uint8_t value)</td></tr>
+<tr class="separator:aa9bfadcde32dc5bd28c8193d2676ae7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dba53d36f569911bf4792badabf292b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#a0dba53d36f569911bf4792badabf292b">readMBRegister</a> (uint8_t address, uint8_t *values, uint8_t length)</td></tr>
+<tr class="separator:a0dba53d36f569911bf4792badabf292b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a96b5e78e356f327e8009a607618d83"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#a7a96b5e78e356f327e8009a607618d83">spiReadWrite</a> (uint8_t tx_message)</td></tr>
 <tr class="separator:a7a96b5e78e356f327e8009a607618d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c4f7e3fd33019fd54b3daa4f05a38bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p280.html#a7c4f7e3fd33019fd54b3daa4f05a38bb">spiCSNhigh</a> ()</td></tr>
@@ -222,16 +222,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Copyright (c) 2020 Bosch Sensortec GmbH. All rights reserved.</p>
-<p>BSD-3-Clause</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-<li>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
-<p>Code origin: <a href="https://github.com/BoschSensortec/BMP280_driver/tree/e3c8794ca51f7115247eb4f5e9a9206dbb09699e">https://github.com/BoschSensortec/BMP280_driver/tree/e3c8794ca51f7115247eb4f5e9a9206dbb09699e</a> Calculate sensor temperature from measurement and compensation parameters. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculate sensor temperature from measurement and compensation parameters. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uncomp_temp</td><td>Raw temperature measurement. </td></tr>
   </table>
@@ -878,6 +869,7 @@ Private Attributes</h2></td></tr>
 <li><a class="el" href="_b_m_p280_8hpp_source.html">BMP280.hpp</a></li>
 <li><a class="el" href="_b_m_p280_8cpp.html">BMP280.cpp</a></li>
 <li><a class="el" href="_b_m_p280__compensation_8cpp.html">BMP280_compensation.cpp</a></li>
+<li><a class="el" href="_b_m_p280__hardware_8cpp.html">BMP280_hardware.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
