@@ -1,3 +1,7 @@
+/**
+  * @file    BMP280_hardware.cpp
+  * @brief   BMP280 hardware interface and register R/W function definitions
+  */
 #include "main.h"
 #include "BMP280/BMP280.hpp"
 #include "BMP280/BMP280_defines.h"

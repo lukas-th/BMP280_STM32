@@ -1,3 +1,7 @@
+/**
+  * @file    BMP280.cpp
+  * @brief   BMP280 member function definitions
+  */
 #include "BMP280/BMP280.hpp"
 #include "BMP280/BMP280_defines.h"
 #include "stm32f1xx_hal.h"

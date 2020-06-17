@@ -1,3 +1,7 @@
+/**
+  * @file    BMP280_defines.h
+  * @brief   BMP280 definitions
+  */
 #ifndef BMP280_DEFINES_H_
 #define BMP280_DEFINES_H_
 

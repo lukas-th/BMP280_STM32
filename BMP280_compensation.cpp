@@ -33,6 +33,8 @@
  * Code origin:
  * https://github.com/BoschSensortec/BMP280_driver/tree/e3c8794ca51f7115247eb4f5e9a9206dbb09699e
  *
+ * @file    BMP280_compensation.cpp
+ * @brief   BMP280 sensor reading compensation methods
  */
 
 #include <stdint.h>

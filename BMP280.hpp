@@ -1,3 +1,7 @@
+/**
+  * @file    BMP280.hpp
+  * @brief   BMP280 class definition
+  */
 #ifndef BMP280_HPP_
 #define BMP280_HPP_
 
