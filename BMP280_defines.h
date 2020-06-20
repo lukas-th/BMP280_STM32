@@ -24,6 +24,13 @@
 
 #define BMP280_RESET_VALUE    0xB6
 
+typedef struct
+{
+	float temperature = 0;
+	float pressure = 0;
+	float altitude = 0;
+} BMP280Measurement;
+
 enum Oversampling
 {
 	oversampling_skipped = 0b000,

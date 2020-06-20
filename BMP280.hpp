@@ -19,12 +19,7 @@ class BMP280
 public:
 	BMP280(SPI_HandleTypeDef *handle);
 
-	struct Measurement
-	{
-		float temperature = 0;
-		float pressure = 0;
-		float altitude = 0;
-	} measurement;
+	BMP280Measurement measurement;
 
 	uint8_t initialize();
 	void measure();
